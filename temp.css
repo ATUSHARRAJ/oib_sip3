@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root{
+    --main-bg-color:brown;
+    --font1:"Roboto", sans-serif; 
+    /* make a variable */
+    --font2:"Ubuntu", sans-serif;
+}
+
+.container{
+    width:40vw;
+    max-height:100vh;
+    background-color:rgb(249, 232, 232);
+    margin:auto;
+    margin-top:80px;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    border-radius:10px;
+    box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.23),
+    0 12px 24px rgba(0, 0, 0, 0.16), 
+    0 12px 24px rgba(0, 0, 0, 0.23);
+
+   
+}
+.about{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family:var(--font1);
+    height: 60px;
+}
+.about img{
+    padding-left:0px;
+    width:50px;
+    height:50px;
+    align-self: center;
+    mix-blend-mode:color-burn;
+}
+.underline hr{
+      border-width: 2px;
+}
+.direction{
+    display:flex;
+    justify-content:space-between;
+}
+#from{
+    padding-left:30px;
+}
+#to{
+    padding-right:80px;
+}
+.main-content{
+    display:flex;
+    justify-content:space-between;
+}
+.from{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-left:10px
+}
+select{
+    height:30px;
+    font-family:var(--font2);
+    font-size:medium;
+    font-weight:bolder;
+    border:2px solid black;
+    border-radius:7px;
+    text-align:center;
+    box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.23),
+    0 12px 24px rgba(0, 0, 0, 0.16), 
+    0 12px 24px rgba(0, 0, 0, 0.23);
+
+
+}
+input{
+    font-weight: bold;
+    font-size:13px;
+    border:2px solid black;
+    height: 24px;
+    border-radius: 7px;
+    text-align:center;
+    box-shadow:  
+    0 6px 12px rgba(0, 0, 0, 0.23),
+    0 12px 24px rgba(0, 0, 0, 0.16), 
+    0 12px 24px rgba(0, 0, 0, 0.23);
+   
+
+}
+
+.to{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-right:10px;
+    
+
+}
+.arrow{
+    align-self: center;
+}
+.arrow img{
+    height:100px;
+    transform:rotate(90deg);
+    padding-right: 30px;
+}
+button{
+    
+    margin:10px 200px;
+    cursor:pointer;
+   background-color: rgb(10, 10, 95);
+    border-radius: 7px;
+    height: 31px;
+    font-weight: bolder;
+    color:antiquewhite;
+    box-shadow: 
+     
+    0 3px 6px rgba(0, 0, 0, 0.23),
+    0 6px 12px rgba(0, 0, 0, 0.16), 
+   
+
+}
+.footer {
+    position:fixed;
+    bottom:0px;
+   left:40%;
+}
+@media (min-width: 500px) and (max-width: 1200px) {
+    .container{
+      max-height:100vh;
+    }
+    .main-content{
+        flex-direction:column;
+    }
+    button{
+        width: 100px;
+       margin:auto;
+       margin-top:10px;
+       margin-bottom:10px;
+       
+    }
+    .arrow img{
+        height:50px;
+        transform:rotate(180deg);
+        margin-top:10px;
+        padding-right:1vh;
+        
+    }
+    .about h1{
+        text-align: center;
+        font-size: 3vw;
+    }
+    .direction{
+        height:0px;
+        width:0px;
+    }
+    .direction h2{
+        height:0px;
+        width:0px;
+        font-size:0px;
+        color:rgb(249, 232, 232);
+    }
+    .to{
+        padding-left:10px;
+    }
+    .from{
+        padding-right:10px;
+    }
+    
+}
+@media (max-width: 500px){
+    .container{
+        max-height:100vh;
+        width:80vw;
+      }
+      .main-content{
+          flex-direction:column;
+      }
+      button{
+          width: 100px;
+         margin:auto;
+         margin-top:10px;
+         margin-bottom:10px;
+         
+      }
+      .arrow img{
+          height:50px;
+          transform:rotate(180deg);
+          margin-top:10px;
+          padding-right:1vh;
+          
+      }
+      .about h1{
+          text-align: center;
+          font-size: 3vw;
+      }
+      .direction{
+          height:0px;
+          width:0px;
+      }
+      .direction h2{
+          height:0px;
+          width:0px;
+          font-size:0px;
+          color:rgb(249, 232, 232);
+      }
+      .to{
+          padding-left:10px;
+      }
+      .from{
+          padding-right:10px;
+      }
+
+}
